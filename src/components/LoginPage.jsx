@@ -56,8 +56,7 @@ function LoginPage({ setUser }) {
     <div className="flex items-center justify-center h-screen bg-[#FFFFFF]">
       <div className="flex gap-12 px-4 max-w-4xl w-full">
         {" "}
-        {/* Increased max width */}
-        {/* Illustration */}
+    
         <div className="hidden md:flex items-center">
           <img
             src="/home.jpg"
@@ -65,7 +64,7 @@ function LoginPage({ setUser }) {
             className="w-[300px] h-[300.4px] rounded-xl object-cover"
           />
         </div>
-        {/* Login Card */}
+     
         <div className="bg-white shadow-lg rounded-2xl p-8 flex flex-col flex-1 my-[2rem]">
           {" "}
           {/* flex-1 for full width */}
@@ -75,9 +74,9 @@ function LoginPage({ setUser }) {
               Unstop
             </span>{" "}
           </h2>
-          {/* Social Buttons */}
+          
           <button className="w-full py-3 rounded-md shadow-md mb-3 flex items-center   justify-center gap-2 text-[#1C1B1F] font-medium hover:bg-gray-50 transition">
-            {/* Google icon */}
+         
             <svg
               width="30"
               height="30"
