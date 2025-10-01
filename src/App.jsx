@@ -6,8 +6,7 @@ import HomePage from "./components/HomePage";
 
 
 function App() {
-  const isAuthenticated =
-    localStorage.getItem("user") || sessionStorage.getItem("user");
+  const isAuthenticated = localStorage.getItem("user");
 
   return (
     <Router>

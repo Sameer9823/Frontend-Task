@@ -43,9 +43,7 @@ function LoginPage() {
 
       const data = await response.json();
       localStorage.setItem("user", JSON.stringify(data));
-      if (rememberMe) {
-        localStorage.setItem("user", JSON.stringify(data));
-      } 
+    
       navigate("/home", { replace: true });
     } catch (err) {
       setError("Invalid credentials");
