@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-function LoginPage() {
+function LoginPage({ setUser }) {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
@@ -44,7 +44,7 @@ function LoginPage() {
       const data = await response.json();
       localStorage.setItem("user", JSON.stringify(data));
     
-      navigate("/home", { replace: true });
+        setUser(data);
     } catch (err) {
       setError("Invalid credentials");
     } finally {

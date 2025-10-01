@@ -7,7 +7,7 @@ function HomePage() {
 
   const handleLogout = () => {
     localStorage.removeItem("user");
-    navigate("/auth/login");
+    navigate("/");
   };
 
   return (
@@ -26,7 +26,7 @@ function HomePage() {
         />
         <h2 className="text-xl font-bold">{user?.username}</h2>
         <p className="text-gray-600">{user?.email || "example@gmail.com"}</p>
-        <p className="text-gray-600">{user?.gender || "example@gmail.com"}</p>
+        <p className="text-gray-600">{user?.gender}</p>
         <button
           onClick={handleLogout}
           className="mt-4 w-[50%]  bg-[#6358DC] text-white py-3 rounded-xl hover:bg-[#4d3fe6] transition duration-300 ease-in-out"
