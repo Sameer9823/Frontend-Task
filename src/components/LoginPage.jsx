@@ -61,7 +61,7 @@ function LoginPage({ setUser }) {
           <img
             src="/home.jpg"
             alt="Login Illustration"
-            className="w-[300px] h-[300.4px] rounded-xl object-cover"
+            className="w-[320px] h-[320.4px] rounded-xl object-cover"
           />
         </div>
      
